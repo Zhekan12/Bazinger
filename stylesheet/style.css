@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Droid Sans';
-  src: url("fonts/DroidSans-Bold.eot");
-  src: url("fonts/DroidSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/DroidSans-Bold.woff2") format("woff2"), url("fonts/DroidSans-Bold.woff") format("woff"), url("fonts/DroidSans-Bold.ttf") format("truetype"), url("fonts/DroidSans-Bold.svg#DroidSans-Bold") format("svg");
+  src: url("../fonts/DroidSans-Bold.eot");
+  src: url("../fonts/DroidSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-Bold.woff2") format("woff2"), url("../fonts/DroidSans-Bold.woff") format("woff"), url("../fonts/DroidSans-Bold.ttf") format("truetype"), url("../fonts/DroidSans-Bold.svg#DroidSans-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'Droid Sans';
-  src: url("fonts/DroidSans.eot");
-  src: url("fonts/DroidSans.eot?#iefix") format("embedded-opentype"), url("fonts/DroidSans.woff2") format("woff2"), url("fonts/DroidSans.woff") format("woff"), url("fonts/DroidSans.ttf") format("truetype"), url("fonts/DroidSans.svg#DroidSans") format("svg");
+  src: url("../fonts/DroidSans.eot");
+  src: url("../fonts/DroidSans.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans.woff2") format("woff2"), url("../fonts/DroidSans.woff") format("woff"), url("../fonts/DroidSans.ttf") format("truetype"), url("../fonts/DroidSans.svg#DroidSans") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -124,6 +124,7 @@ header .header-body .header-menu .header-list li {
 }
 
 header .header-body .header-menu .header-list li .header-link {
+  font-family: 'Droid Sans';
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
@@ -200,7 +201,8 @@ header::before {
     left: 0;
     width: 100%;
     height: 75%;
-    background-color: black 0.2;
+    background-color: black;
+    opacity: 0.8;
     padding-top: 80px;
     overflow: auto;
     -webkit-transition: all 0.3s ease 0s;
@@ -227,8 +229,102 @@ header::before {
 }
 
 .main-banner {
-  background-image: url("images/main-banner.jpg");
+  background-image: url("../images/main-banner.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+}
+
+.main-banner .container-special {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.main-banner .container-special .owl-carousel {
+  padding-top: 100px;
+}
+
+.main-banner .container-special .owl-carousel .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.main-banner .container-special .owl-carousel .slide img {
+  max-width: 630px;
+  top: 100px;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block {
+  margin-top: 180px;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block h2 span {
+  font-weight: bold;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: lighter;
+  color: #fff;
+  margin-top: 30px;
+  max-width: 670px;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block .button-block {
+  margin-top: 40px;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block .button-block a {
+  display: inline-block;
+  max-width: 195px;
+  width: 100%;
+  border: 2px solid #fff;
+  text-align: center;
+  height: 65px;
+  padding: 20px 0;
+  font-size: 15px;
+  line-height: 120%;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block .button-block a:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block .button-block .dl-button:hover {
+  background-color: #4bcaff;
+  border: 2px solid #4bcaff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block .button-block a.learn-button {
+  background-color: #4bcaff;
+  border: 2px solid #4bcaff;
+  margin-left: 40px;
+}
+
+.main-banner .container-special .owl-carousel .slide .text-block .button-block a.learn-button:hover {
+  background-color: inherit;
+  border: 2px solid #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
